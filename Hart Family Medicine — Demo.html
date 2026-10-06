@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dr. Amelia Hart — Family & Preventive Medicine</title>
+<style>
+:root{--bg:#fff;--ink:#222326;--gray:#747679;--cloud:#ebf0f8;--char:#1f2025;--on-char:#ebf0f8;--sky1:#d2e5ff;--sky2:#fff9ee;--green:#31ce01;--blue:#415eee;--lilac:#b9a6ff;--coral:#ffab94;--gold:#ffca00;--nav:rgba(255,255,255,.8);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121316;--ink:#f2f3f5;--gray:#a0a3a8;--cloud:#1e2128;--char:#f2f3f5;--on-char:#1f2025;--sky1:#1b2a44;--sky2:#1a1a1c;--nav:rgba(30,33,40,.8)}}
+:root[data-theme="dark"]{--bg:#121316;--ink:#f2f3f5;--gray:#a0a3a8;--cloud:#1e2128;--char:#f2f3f5;--on-char:#1f2025;--sky1:#1b2a44;--sky2:#1a1a1c;--nav:rgba(30,33,40,.8)}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,Inter,"Segoe UI",sans-serif;line-height:1.3}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-weight:600;margin:0;letter-spacing:-.03em;line-height:1}
+.body{font-size:clamp(18px,2vw,24px);color:var(--gray);line-height:1.3}
+.btn{display:inline-block;border:0;cursor:pointer;font:500 16px/1.4 inherit;font-family:inherit;background:var(--char);color:var(--on-char);padding:10px 20px;border-radius:128px}
+.btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink)}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;padding:12px 20px 0}
+nav{max-width:1000px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:16px;background:var(--nav);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-radius:32px;padding:10px 12px 10px 24px;box-shadow:0 2px 16px rgba(0,0,0,.08)}
+.brand{font-weight:500;font-size:18px;letter-spacing:.01em;display:flex;align-items:center;gap:10px}
+.brand i{width:22px;height:22px;border-radius:50%;background:conic-gradient(var(--green),var(--blue),var(--lilac),var(--coral),var(--green))}
+nav .links{display:flex;gap:24px;color:var(--gray);font-weight:500}
+@media(max-width:760px){nav .links{display:none}}
+.hero{margin:-72px 12px 0;border-radius:32px;background:linear-gradient(var(--sky1),var(--sky2));padding:150px 20px 0;text-align:center;overflow:hidden}
+.hero h1{font-size:clamp(42px,8vw,80px);max-width:900px;margin:0 auto 24px}
+.hero .body{max-width:600px;margin:0 auto 32px}
+.rating{margin-top:20px;font-size:13px;color:var(--gray)}.rating b{color:var(--gold);letter-spacing:2px;font-size:15px}
+.stage{position:relative;max-width:860px;margin:56px auto 0;height:330px}
+.card{position:absolute;background:var(--bg);border-radius:24px;box-shadow:0 0 16px -8px rgba(0,0,0,.25);padding:24px;text-align:left}
+.c1{left:50%;transform:translateX(-50%);bottom:-40px;width:min(440px,92%);height:320px}
+.c2{left:0;bottom:60px;width:210px}
+.c3{right:0;bottom:90px;width:200px}
+@media(max-width:900px){.c2,.c3{display:none}}
+.lbl{font-size:13px;color:var(--gray);font-weight:500}
+.big{font-size:40px;font-weight:600;letter-spacing:-.03em}
+.rings{display:flex;gap:16px;margin-top:16px}
+.ring{--p:70;--c:var(--green);width:84px;height:84px;border-radius:50%;background:conic-gradient(var(--c) calc(var(--p)*1%),var(--cloud) 0);display:grid;place-items:center;flex:none}
+.ring span{width:64px;height:64px;border-radius:50%;background:var(--bg);display:grid;place-items:center;font-weight:600;font-size:18px}
+.bars{display:flex;align-items:flex-end;gap:8px;height:90px;margin-top:20px}
+.bars i{flex:1;border-radius:8px;background:var(--cloud)}.bars i:nth-child(5){background:var(--blue)}
+section{padding:80px 0}
+.center{text-align:center}
+.sec-h{font-size:clamp(36px,6vw,64px);max-width:820px;margin:0 auto 20px}
+.trust{display:flex;flex-wrap:wrap;gap:12px 40px;justify-content:center;margin-top:28px;font-weight:600;font-size:20px;letter-spacing:-.02em;opacity:.85}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px}
+@media(max-width:900px){.grid3{grid-template-columns:1fr}}
+.cloud{background:var(--cloud);border-radius:24px;padding:32px;text-align:left}
+.cloud h3{font-size:clamp(30px,4vw,40px);margin-bottom:16px;letter-spacing:-.03em}
+.cloud p{margin:0;font-size:20px;color:var(--gray);line-height:1.3}
+.dot{width:48px;height:48px;border-radius:16px;background:var(--bg);margin-bottom:56px;display:grid;place-items:center}
+.dot i{width:20px;height:20px;border-radius:50%}
+.about{display:grid;grid-template-columns:1fr 1.1fr;gap:48px;align-items:center}
+@media(max-width:900px){.about{grid-template-columns:1fr}}
+.portrait{aspect-ratio:4/5;border-radius:24px;background:linear-gradient(160deg,var(--sky1),var(--sky2) 70%,var(--coral));position:relative;overflow:hidden;box-shadow:0 0 16px -8px rgba(0,0,0,.25)}
+.portrait::before{content:"";position:absolute;left:50%;top:24%;width:34%;aspect-ratio:1;border-radius:50%;background:var(--bg);opacity:.9;transform:translateX(-50%)}
+.portrait::after{content:"";position:absolute;left:50%;bottom:-8%;width:78%;height:46%;border-radius:50% 50% 0 0;background:var(--bg);opacity:.9;transform:translateX(-50%)}
+.portrait span{position:absolute;left:16px;bottom:16px;z-index:2;background:var(--char);color:var(--on-char);border-radius:128px;padding:6px 14px;font-size:14px;font-weight:500}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:32px}
+.stats div{background:var(--cloud);border-radius:24px;padding:20px}
+.stats b{display:block;font-size:40px;letter-spacing:-.03em;font-weight:600}
+.stats small{color:var(--gray);font-size:14px}
+.quotes{display:flex;gap:16px;overflow-x:auto;padding:8px 20px 24px;scroll-snap-type:x mandatory;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.q{flex:none;width:300px;scroll-snap-align:center;background:var(--bg);border-radius:16px;box-shadow:0 0 16px -8px rgba(0,0,0,.45);padding:24px;text-align:left}
+.q p{font-size:19px;margin:12px 0 20px;line-height:1.3}.q small{color:var(--gray)}.q b{color:var(--gold);letter-spacing:2px}
+.book{background:var(--cloud);border-radius:32px;padding:56px 32px;margin:0 12px}
+.book .inner{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+@media(max-width:860px){.book .inner{grid-template-columns:1fr}}
+.days,.slots{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 20px}
+.chip{border:0;font:500 15px inherit;font-family:inherit;background:var(--bg);color:var(--ink);padding:10px 16px;border-radius:128px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--char);color:var(--on-char)}
+.panel{background:var(--bg);border-radius:24px;padding:28px;box-shadow:0 2px 16px rgba(0,0,0,.08)}
+#msg{margin-top:14px;font-size:15px;color:var(--gray);min-height:20px}
+footer{padding:80px 0 48px;color:var(--gray)}
+.fgrid{display:flex;flex-wrap:wrap;gap:40px;justify-content:space-between}
+footer h4{margin:0 0 16px;color:var(--ink);font-size:16px}footer a{display:block;margin-bottom:12px;color:var(--ink);font-weight:500}
+.note{margin-top:48px;font-size:13px}
+</style>
+</head>
+<body>
+<header><nav>
+  <a class="brand" href="#top"><i></i>Hart Family Medicine</a>
+  <div class="links"><a href="#care">Care</a><a href="#doctor">Your doctor</a><a href="#reviews">Reviews</a></div>
+  <a class="btn" href="#book">Book a visit</a>
+</nav></header>
+
+<main id="top">
+<div class="hero">
+  <h1>Healthcare that actually has time for you.</h1>
+  <p class="body">Dr. Amelia Hart and her team offer unhurried, personal primary care — with same-week appointments and clear answers.</p>
+  <a class="btn" href="#book">Book an appointment</a>
+  <div class="rating"><b>★★★★★</b>&nbsp; 4.9 from 1,200+ patient reviews</div>
+  <div class="stage">
+    <div class="card c2"><div class="lbl">Next visit</div><div class="big" style="font-size:30px;margin:6px 0">Thu, 10:30</div><div class="lbl">Annual check-up</div></div>
+    <div class="card c1">
+      <div class="lbl">Your health overview</div>
+      <div class="big">Looking good, Sam</div>
+      <div class="rings">
+        <div class="ring" style="--p:82;--c:var(--green)"><span>82</span></div>
+        <div class="ring" style="--p:64;--c:var(--blue)"><span>64</span></div>
+        <div class="ring" style="--p:91;--c:var(--lilac)"><span>91</span></div>
+      </div>
+      <div class="bars"><i style="height:40%"></i><i style="height:62%"></i><i style="height:50%"></i><i style="height:78%"></i><i style="height:92%"></i><i style="height:70%"></i></div>
+    </div>
+    <div class="card c3"><div class="lbl">Lab results</div><div class="big" style="font-size:30px;margin:6px 0">Ready</div><div class="lbl" style="color:#31a800">All within range ●</div></div>
+  </div>
+</div>
+
+<section class="center"><div class="wrap">
+  <h2 style="font-size:24px;letter-spacing:-.01em">Trusted and accredited</h2>
+  <div class="trust"><span>Board Certified</span><span>Harvard Medical</span><span>AAFP</span><span>Mayo Alumni</span><span>HIPAA Secure</span></div>
+</div></section>
+
+<section id="care" class="center"><div class="wrap">
+  <h2 class="sec-h">Care for every stage of life.</h2>
+  <p class="body" style="max-width:640px;margin:0 auto">From the first sniffle to long-term wellness plans, everything under one roof.</p>
+  <div class="grid3">
+    <div class="cloud"><div class="dot"><i style="background:var(--green)"></i></div><h3>Primary care</h3><p>Check-ups, illness, chronic conditions and referrals — with a doctor who knows your history.</p></div>
+    <div class="cloud"><div class="dot"><i style="background:var(--blue)"></i></div><h3>Preventive health</h3><p>Screenings, vaccines and personalised plans that catch problems early.</p></div>
+    <div class="cloud"><div class="dot"><i style="background:var(--lilac)"></i></div><h3>Virtual visits</h3><p>Video consults from home, with prescriptions and results shared securely online.</p></div>
+  </div>
+</div></section>
+
+<section id="doctor"><div class="wrap about">
+  <div class="portrait"><span>Dr. Amelia Hart, MD</span></div>
+  <div>
+    <h2 class="sec-h" style="margin:0 0 20px;font-size:clamp(36px,5vw,56px)">Medicine with a human pace.</h2>
+    <p class="body">With 15 years in family medicine, Dr. Hart believes the best care starts with listening. Appointments are 30 minutes — never rushed.</p>
+    <div class="stats"><div><b>15+</b><small>Years of practice</small></div><div><b>12k</b><small>Patients cared for</small></div><div><b>98%</b><small>Would recommend</small></div></div>
+  </div>
+</div></section>
+
+<section id="reviews" class="center" style="padding-top:0"><div class="wrap">
+  <h2 class="sec-h">Patients feel the difference.</h2>
+</div>
+<div class="quotes" style="margin-top:32px">
+  <div class="q"><b>★★★★★</b><p>Finally a doctor who explains everything. I never feel rushed.</p><small>Sarah M. · Patient since 2021</small></div>
+  <div class="q"><b>★★★★★</b><p>Booked on Monday, seen on Wednesday. Results arrived in the app the same day.</p><small>David K.</small></div>
+  <div class="q"><b>★★★★★</b><p>Our whole family goes here. The kids actually enjoy their visits.</p><small>Priya R.</small></div>
+  <div class="q"><b>★★★★★</b><p>Video visit saved me a half-day off work. Seamless.</p><small>James T.</small></div>
+</div></section>
+
+<div class="book" id="book"><div class="inner">
+  <div>
+    <h2 style="font-size:clamp(36px,5vw,56px);margin-bottom:20px">Book your visit in 30 seconds.</h2>
+    <p class="body">Pick a day and time. We’ll confirm by text and send a reminder before your appointment.</p>
+  </div>
+  <div class="panel">
+    <div class="lbl">Day</div>
+    <div class="days" id="days"></div>
+    <div class="lbl">Time</div>
+    <div class="slots" id="slots"></div>
+    <button class="btn" id="go" style="width:100%;padding:14px">Confirm appointment</button>
+    <div id="msg" role="status"></div>
+  </div>
+</div></div>
+</main>
+
+<footer><div class="wrap">
+  <div class="fgrid">
+    <div><div class="brand" style="color:var(--ink)"><i></i>Hart Family Medicine</div><p style="max-width:260px;margin-top:16px">Personal, preventive primary care for the whole family.</p></div>
+    <div><h4>Visit</h4><a href="#care">Services</a><a href="#doctor">Meet Dr. Hart</a><a href="#book">Book online</a></div>
+    <div><h4>Contact</h4><a href="#">(555) 014-2290</a><a href="#">hello@hartmedicine.example</a><a href="#">Mon–Fri · 8am–6pm</a></div>
+  </div>
+  <p class="note">Design demo — placeholder name, content and contact details. For emergencies, call your local emergency number.</p>
+</div></footer>
+
+<script>
+const days=["Mon","Tue","Wed","Thu","Fri"],times=["9:00","10:30","11:30","2:00","3:30","4:30"];
+let d=null,t=null;
+function chips(id,arr,set){const el=document.getElementById(id);arr.forEach(v=>{const b=document.createElement('button');b.className='chip';b.textContent=v;b.setAttribute('aria-pressed','false');b.onclick=()=>{el.querySelectorAll('.chip').forEach(c=>c.setAttribute('aria-pressed','false'));b.setAttribute('aria-pressed','true');set(v)};el.appendChild(b)})}
+chips('days',days,v=>d=v);chips('slots',times,v=>t=v);
+document.getElementById('go').onclick=()=>{document.getElementById('msg').textContent=(d&&t)?`✓ You're booked for ${d} at ${t}. A confirmation text is on its way.`:'Please choose a day and a time.'};
+</script>
+</body>
+</html>
